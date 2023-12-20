@@ -1,0 +1,100 @@
+18:42:11,682  INFO Util:31 - Util.conectar - lendo arquivo util.properties: 
+18:42:11,686  INFO Util:38 - sgbd => postgresql
+18:42:11,687  INFO Util:39 - banco => atendimento_medico_1
+18:42:11,687  INFO Util:40 - ip => localhost
+18:42:11,687  INFO Util:45 - configurando postgresql
+18:42:11,726 DEBUG logging:38 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+18:42:11,873  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: hibernate-postgresql]
+18:42:11,961  INFO Version:44 - HHH000412: Hibernate ORM core version 6.3.1.Final
+18:42:12,021 DEBUG RegionFactoryInitiator:122 - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+18:42:12,023  INFO RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+18:42:12,379  WARN pooling:80 - HHH10001002: Using built-in connection pool (not intended for production use)
+18:42:12,385  INFO pooling:135 - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+18:42:12,386  INFO pooling:157 - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/atendimento_medico_1]
+18:42:12,386  INFO pooling:166 - HHH10001001: Connection properties: {password=****, user=postgres}
+18:42:12,386  INFO pooling:170 - HHH10001003: Autocommit mode: false
+18:42:12,389  INFO pooling:366 - HHH10001115: Connection pool size: 20 (min=1)
+18:42:12,622  WARN Dialect:353 - HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 11.0.0. Check the community dialects project for available legacy versions.
+18:42:12,628  WARN deprecation:152 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+18:42:14,237  INFO JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+18:42:14,609 DEBUG SQL:135 - select u1_0.id,u1_0.nome,u1_0.senha from Usuario u1_0
+18:42:22,338 DEBUG SQL:135 - select u1_0.id,u1_0.nome,u1_0.senha from Usuario u1_0 where u1_0.nome=?
+18:42:22,339 TRACE bind:24 - binding parameter (1:VARCHAR) <- [FAUSTO]
+18:42:22,496  INFO pooling:601 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/atendimento_medico_1]
+18:42:24,004  INFO Util:31 - Util.conectar - lendo arquivo util.properties: 
+18:42:24,005  INFO Util:38 - sgbd => postgresql
+18:42:24,005  INFO Util:39 - banco => atendimento_medico_1
+18:42:24,005  INFO Util:40 - ip => localhost
+18:42:24,005  INFO Util:45 - configurando postgresql
+18:42:24,010  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: hibernate-postgresql]
+18:42:24,012 DEBUG RegionFactoryInitiator:122 - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+18:42:24,012  INFO RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+18:42:24,040  WARN pooling:80 - HHH10001002: Using built-in connection pool (not intended for production use)
+18:42:24,040  INFO pooling:135 - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+18:42:24,040  INFO pooling:157 - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/atendimento_medico_1]
+18:42:24,041  INFO pooling:166 - HHH10001001: Connection properties: {password=****, user=postgres}
+18:42:24,041  INFO pooling:170 - HHH10001003: Autocommit mode: false
+18:42:24,041  INFO pooling:366 - HHH10001115: Connection pool size: 20 (min=1)
+18:42:24,096  WARN Dialect:353 - HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 11.0.0. Check the community dialects project for available legacy versions.
+18:42:24,097  WARN deprecation:152 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+18:42:24,174  INFO JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+18:42:27,918 DEBUG SQL:135 - select p1_0.id,p1_0.cpf,l1_0.paciente_id,l1_0.id,l1_0.data,l1_0.medico_id,p1_0.nome from Paciente p1_0 join Atendimento l1_0 on p1_0.id=l1_0.paciente_id where (select count(1) from Atendimento l2_0 where p1_0.id=l2_0.paciente_id)>1
+18:42:32,039  INFO pooling:601 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/atendimento_medico_1]
+18:42:33,729  INFO Util:31 - Util.conectar - lendo arquivo util.properties: 
+18:42:33,729  INFO Util:38 - sgbd => postgresql
+18:42:33,729  INFO Util:39 - banco => atendimento_medico_1
+18:42:33,730  INFO Util:40 - ip => localhost
+18:42:33,730  INFO Util:45 - configurando postgresql
+18:42:33,734  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: hibernate-postgresql]
+18:42:33,736 DEBUG RegionFactoryInitiator:122 - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+18:42:33,736  INFO RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+18:42:33,757  WARN pooling:80 - HHH10001002: Using built-in connection pool (not intended for production use)
+18:42:33,758  INFO pooling:135 - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+18:42:33,758  INFO pooling:157 - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/atendimento_medico_1]
+18:42:33,758  INFO pooling:166 - HHH10001001: Connection properties: {password=****, user=postgres}
+18:42:33,758  INFO pooling:170 - HHH10001003: Autocommit mode: false
+18:42:33,758  INFO pooling:366 - HHH10001115: Connection pool size: 20 (min=1)
+18:42:33,811  WARN Dialect:353 - HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 11.0.0. Check the community dialects project for available legacy versions.
+18:42:33,811  WARN deprecation:152 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+18:42:33,880  INFO JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+18:42:33,883 DEBUG SQL:135 - select a1_0.id,a1_0.data,a1_0.medico_id,a1_0.paciente_id from Atendimento a1_0
+18:42:33,893 DEBUG SQL:135 - select m1_0.id,m1_0.crm,m1_0.especialidade,m1_0.nome from Medico m1_0 where m1_0.id=?
+18:42:33,893 TRACE bind:24 - binding parameter (1:INTEGER) <- [1]
+18:42:33,906 DEBUG SQL:135 - select p1_0.id,p1_0.cpf,p1_0.nome from Paciente p1_0 where p1_0.id=?
+18:42:33,907 TRACE bind:24 - binding parameter (1:INTEGER) <- [1]
+18:42:48,288 DEBUG SQL:135 - select p1_0.id,p1_0.cpf,p1_0.nome from Paciente p1_0 where p1_0.cpf=?
+18:42:48,289 TRACE bind:24 - binding parameter (1:VARCHAR) <- [10328508411]
+18:42:48,292 DEBUG SQL:135 - select m1_0.id,m1_0.crm,m1_0.especialidade,m1_0.nome from Medico m1_0 where m1_0.crm=?
+18:42:48,293 TRACE bind:24 - binding parameter (1:VARCHAR) <- [012345]
+18:42:48,297 DEBUG SQL:135 - select l1_0.paciente_id,l1_0.id,l1_0.data,m1_0.id,m1_0.crm,m1_0.especialidade,m1_0.nome from Atendimento l1_0 left join Medico m1_0 on m1_0.id=l1_0.medico_id where l1_0.paciente_id=?
+18:42:48,297 TRACE bind:24 - binding parameter (1:INTEGER) <- [1]
+18:42:48,314 DEBUG SQL:135 - insert into Atendimento (data,medico_id,paciente_id) values (?,?,?)
+18:42:48,316 TRACE bind:24 - binding parameter (1:VARCHAR) <- [16/12/2023]
+18:42:48,316 TRACE bind:24 - binding parameter (2:INTEGER) <- [1]
+18:42:48,316 TRACE bind:24 - binding parameter (3:INTEGER) <- [1]
+18:42:48,354 DEBUG SQL:135 - select a1_0.id,a1_0.data,a1_0.medico_id,a1_0.paciente_id from Atendimento a1_0
+18:42:48,355 DEBUG SQL:135 - select m1_0.id,m1_0.crm,m1_0.especialidade,m1_0.nome from Medico m1_0 where m1_0.id=?
+18:42:48,356 TRACE bind:24 - binding parameter (1:INTEGER) <- [1]
+18:42:48,357 DEBUG SQL:135 - select p1_0.id,p1_0.cpf,p1_0.nome from Paciente p1_0 where p1_0.id=?
+18:42:48,357 TRACE bind:24 - binding parameter (1:INTEGER) <- [1]
+18:42:51,125  INFO pooling:601 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/atendimento_medico_1]
+18:42:52,808  INFO Util:31 - Util.conectar - lendo arquivo util.properties: 
+18:42:52,808  INFO Util:38 - sgbd => postgresql
+18:42:52,808  INFO Util:39 - banco => atendimento_medico_1
+18:42:52,809  INFO Util:40 - ip => localhost
+18:42:52,809  INFO Util:45 - configurando postgresql
+18:42:52,813  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: hibernate-postgresql]
+18:42:52,815 DEBUG RegionFactoryInitiator:122 - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+18:42:52,815  INFO RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+18:42:52,837  WARN pooling:80 - HHH10001002: Using built-in connection pool (not intended for production use)
+18:42:52,837  INFO pooling:135 - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+18:42:52,837  INFO pooling:157 - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/atendimento_medico_1]
+18:42:52,838  INFO pooling:166 - HHH10001001: Connection properties: {password=****, user=postgres}
+18:42:52,838  INFO pooling:170 - HHH10001003: Autocommit mode: false
+18:42:52,838  INFO pooling:366 - HHH10001115: Connection pool size: 20 (min=1)
+18:42:52,893  WARN Dialect:353 - HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 11.0.0. Check the community dialects project for available legacy versions.
+18:42:52,893  WARN deprecation:152 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+18:42:52,958  INFO JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+18:42:56,598 DEBUG SQL:135 - select p1_0.id,p1_0.cpf,l1_0.paciente_id,l1_0.id,l1_0.data,l1_0.medico_id,p1_0.nome from Paciente p1_0 join Atendimento l1_0 on p1_0.id=l1_0.paciente_id where (select count(1) from Atendimento l2_0 where p1_0.id=l2_0.paciente_id)>1
+18:42:56,603 DEBUG SQL:135 - select m1_0.id,m1_0.crm,m1_0.especialidade,m1_0.nome from Medico m1_0 where m1_0.id=?
+18:42:56,604 TRACE bind:24 - binding parameter (1:INTEGER) <- [1]
